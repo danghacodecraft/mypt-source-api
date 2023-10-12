@@ -3,7 +3,7 @@ from django.conf import settings as project_settings
 from rest_framework import status
 from rest_framework.viewsets import ViewSet
 
-from ...core.helpers.response import *
+from core.helpers.response import *
 
 
 class HealthView(ViewSet):

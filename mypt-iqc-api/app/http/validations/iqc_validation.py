@@ -2,7 +2,7 @@ import ast
 from rest_framework.serializers import *
 from rest_framework import serializers
 from app.core.helpers.utils import *
-from ...core.helpers import helper, iqc_global_variable
+from core.helpers import helper, iqc_global_variable
 
 
 class iQCDeploymentValidate(Serializer):

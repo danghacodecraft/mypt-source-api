@@ -1,11 +1,11 @@
 from rest_framework.decorators import api_view
-from ...myCore.helpers.response import *
+from http.helpers.response import *
 import jwt
 import ast
 import json
 from django.conf import settings as project_settings
 from app.configs import app_settings
-from app.myCore.helpers import utils as utHelper
+from app.core.helpers import utils as utHelper
 from ..models.permission_with_route import PermissionWithRoute
 from ..serializers.permission_with_route_serializer import PermissionWithRouteSerializer
 import redis

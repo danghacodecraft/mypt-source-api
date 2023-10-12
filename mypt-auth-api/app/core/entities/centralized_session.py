@@ -1,7 +1,7 @@
 from datetime import datetime
 from datetime import timedelta
 from django.conf import settings as project_settings
-from ....app.core.entities.my_jwt import MyJwt
+from app.core.entities.my_jwt import MyJwt
 import redis
 import ast
 

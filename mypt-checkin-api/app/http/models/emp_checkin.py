@@ -1,7 +1,7 @@
 from django.db import models
-from ...core.helpers.global_variables import *
+from core.helpers.global_variables import *
 
-from ...core.helpers.utils import *
+from core.helpers.utils import *
 
 class EmpCheckin(models.Model):
     class Meta:

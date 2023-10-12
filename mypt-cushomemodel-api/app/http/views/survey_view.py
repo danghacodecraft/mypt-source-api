@@ -10,9 +10,9 @@ from ..serializers.house_model_survey_equipment_serializer import SurveyEquipmen
 from ..serializers.house_model_survey_image_serializer import HouseModelSurveyImageSerializer
 from ..serializers.house_model_survey_net_package_serializer import SurveyNetPackageSerializer
 from ..validation.survey_validation import *
-from ...core.helpers import global_variable as gb
-from ...core.helpers.auth_session_handler import *
-from ...core.helpers.utils import process_equipment_data
+from core.helpers import global_variable as gb
+from core.helpers.auth_session_handler import *
+from core.helpers.utils import process_equipment_data
 
 
 class CusHomeModelSurveyView(ViewSet):

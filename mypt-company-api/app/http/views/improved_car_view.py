@@ -2,13 +2,13 @@ from drf_spectacular.utils import extend_schema, OpenApiResponse
 from rest_framework import status
 
 from project.throttling import UserThrottle
-from ...core.helpers import auth_session_handler as authSessionHandler
-from ...http.paginations.custom_pagination import *
+from core.helpers import auth_session_handler as authSessionHandler
+from http.paginations.custom_pagination import *
 from ..serializers.improved_car_serializer import *
 from ..validations.improved_car_validate import *
-from ...core.helpers.response import *
+from core.helpers.response import *
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.utils_call_api import *
+from core.helpers.utils_call_api import *
 from ..threading.handle_mail import *
 from ..threading.handle_notification import *
 from django.conf import settings as project_settings

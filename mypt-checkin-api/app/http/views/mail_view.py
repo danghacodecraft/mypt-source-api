@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ViewSet
 from django.template.loader import get_template
-from ...core.helpers.mail import *
-from ...core.helpers.response import *
+from core.helpers.mail import *
+from core.helpers.response import *
 
 class SendMailView(ViewSet):
     def send_email(self, request):

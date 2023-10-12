@@ -5,17 +5,17 @@ from project.throttling import (
     SalaryUserRateThrottle,
     SalaryCronCallUserRateThrottle
 )
-from ...core.helpers import auth_session_handler as authSessionHandler
-from ...core.helpers.response import *
-from ...core.helpers.my_datetime import *
+from core.helpers import auth_session_handler as authSessionHandler
+from core.helpers.response import *
+from core.helpers.my_datetime import *
 from ..serializers.salary_daily_serializer import *
 from ..serializers.salary_real_serializer import *
-from ...http.validations.salary_validate import (
+from http.validations.salary_validate import (
     SalaryDailyValidate,
     SalaryMonthlyValidate
 )
-from ...http.apis.inside_api import *
-from ...http.apis.profile_api import (
+from http.apis.inside_api import *
+from http.apis.profile_api import (
     get_employee_from_email
 )
 from datetime import datetime

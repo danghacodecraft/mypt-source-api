@@ -2,7 +2,7 @@ from datetime import datetime
 from rest_framework.viewsets import ViewSet
 
 from app.core.helpers.auth_session_handler import getUserAuthSessionData
-from ...core.helpers.response import response_data
+from core.helpers.response import response_data
 from ..validation.device_permission_validator import *
 from ..serializers.device_permission_serializer import *
 from django.db import connections

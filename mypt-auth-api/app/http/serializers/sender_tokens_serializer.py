@@ -1,4 +1,4 @@
-from app.myHttp.models.sender_tokens import *
+from app.http.models.sender_tokens import *
 from rest_framework.serializers import ModelSerializer
 
 class SenderTokensSerializer(ModelSerializer):

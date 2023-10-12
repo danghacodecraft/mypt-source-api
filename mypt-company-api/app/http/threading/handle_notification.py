@@ -1,8 +1,8 @@
 import threading
 import base64
 from ...configs.service_api_config import SERVICE_CONFIG
-from ...core.helpers.utils import *
-from ...core.helpers.mail import *
+from core.helpers.utils import *
+from core.helpers.mail import *
 from django.conf import settings as project_settings
 
 class HandleNotification(threading.Thread):

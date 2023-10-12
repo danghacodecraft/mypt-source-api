@@ -3,7 +3,7 @@ from rest_framework.viewsets import ModelViewSet
 from ..models.current_contract_info_log import CurrentContractInfoLog
 from ..serializers.config_serializer import ConfigsSerializer
 from ..serializers.current_contract_info_log_serializer import CurrentContractInfoLogSerializer
-from ...core.helpers.response import *
+from core.helpers.response import *
 
 
 class CurrentContractInfoLogView(ModelViewSet):

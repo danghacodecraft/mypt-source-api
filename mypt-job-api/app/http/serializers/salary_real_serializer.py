@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
-from ...core.helpers.utils import *
-from ...http.models.salary_real import SalaryReal
-from ...http.serializers.salary_configs_serializer import SalaryConfigsSerializer
+from core.helpers.utils import *
+from http.models.salary_real import SalaryReal
+from http.serializers.salary_configs_serializer import SalaryConfigsSerializer
 from ...configs import app_settings
 
 

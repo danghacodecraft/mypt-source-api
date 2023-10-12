@@ -1,4 +1,4 @@
-from ...core.helpers.response import *
+from core.helpers.response import *
 from ..serializers.storage_uuid_serializer import *
 from ..paginations.custom_pagination import *
 import redis
@@ -34,13 +34,6 @@ class HealthView(ViewSet):
                                           , db=project_settings.REDIS_DATABASE_CENTRALIZED,
                                           password=project_settings.REDIS_PASSWORD_CENTRALIZED
                                           , decode_responses=True, charset="utf-8")
-
-        resSetRedisKey = redisInstance.set("profile", "Day la value cua Redis key profile abcdef 123969", 3600)
-        print("redis value : " + redisInstance.get("profile"))
-
-        print("ta co redis port : " + str(project_settings.REDIS_PORT_CENTRALIZED))
-        print("minh co redis password : " + project_settings.REDIS_PASSWORD_CENTRALIZED)
-        print("CHUNG TA co redis host : " + project_settings.REDIS_HOST_CENTRALIZED)
 
         resData = {
             "redisConInfo": {

@@ -2,7 +2,7 @@ from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
 
 from ..models.house_model_type import HouseModelType
-from ...core.helpers.utils import return_choice_name
+from core.helpers.utils import return_choice_name
 
 
 class HouseModelTypeSerializer(ModelSerializer):

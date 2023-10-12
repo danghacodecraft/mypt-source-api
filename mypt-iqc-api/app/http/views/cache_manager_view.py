@@ -1,10 +1,10 @@
 import ast
 from datetime import datetime
 from rest_framework.viewsets import ViewSet
-from ...core.entities.redis_service import RedisService
-from ...core.helpers import global_variable, iqc_global_variable
-from ...core.helpers.response import response_data
-from ...core.helpers import utils
+from core.entities.redis_service import RedisService
+from core.helpers import global_variable, iqc_global_variable
+from core.helpers.response import response_data
+from core.helpers import utils
 
 
 class CacheManagerView(ViewSet):

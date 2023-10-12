@@ -1,5 +1,5 @@
-from .....app.http.entities.user_infos_handler import UserInfosHandler
-from .....app.core.entities.OAuth.token_handler import TokenHandler
+from app.http.entities.user_infos_handler import UserInfosHandler
+from app.core.entities.OAuth.token_handler import TokenHandler
 
 class AccountCredentialsGrant:
     def genAuthorCode(self, userId, authData, grantId):

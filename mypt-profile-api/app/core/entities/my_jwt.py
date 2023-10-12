@@ -1,6 +1,6 @@
 import jwt
 import uuid
-from ....app.configs import app_settings
+from app.configs import app_settings
 
 class MyJwt:
     jwtSecretKey = "UOJNHKzxcxz672bnvghjquvmxjvkjlk"

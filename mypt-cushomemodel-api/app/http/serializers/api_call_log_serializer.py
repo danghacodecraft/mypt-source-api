@@ -2,7 +2,7 @@ from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
 
 from ..models.api_call_log import ApiCallLog
-from ...core.helpers.my_datetime import getFormatDatetimeNow
+from core.helpers.my_datetime import getFormatDatetimeNow
 
 
 class ApiCallLogSerializer(ModelSerializer):

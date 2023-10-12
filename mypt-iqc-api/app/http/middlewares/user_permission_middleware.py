@@ -5,7 +5,7 @@ from datetime import datetime
 from django.conf import settings as project_settings
 from app.configs import app_settings
 from app.core.helpers import utils as utHelper
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import auth_session_handler as authSessionHandler
 import redis
 import ast
 import json

@@ -1,9 +1,8 @@
 import datetime
 from requests import request, exceptions, post
-import json
-from ...core.helpers.utils import *
+from core.helpers.utils import *
 from datetime import datetime
-from ...core.entities.redis_service import RedisService
+from core.entities.redis_service import RedisService
 from threading import Thread
 from ..models.salary_call_api_inside_histories import SalaryCallApiInsideHistories
 from ..serializers.salary_configs_serializer import SalaryConfigsSerializer
@@ -84,9 +83,9 @@ class InsideApi:
     def authenticate(self):
         apiUrl = 'https://iam.fpt.vn/auth/realms/fpt/protocol/openid-connect/token'
         inputParamsStr = {
-            'client_id': 'salary_portal',
-            'client_secret': 'XH7EIiguszuHT58o57w4UcH7pWIfS38r',
-            'grant_type': 'client_credentials'
+            'client_id': '',
+            'client_secret': '',
+            'grant_type': ''
         }
         headersDict = {
             "Content-Type": "application/x-www-form-urlencoded",

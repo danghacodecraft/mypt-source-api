@@ -1,7 +1,7 @@
 import json
 from rest_framework.viewsets import ViewSet
 import random
-from ...myCore.helpers.response import response_data
+from http.helpers.response import response_data
 from ..entities import global_data
 import requests
 from django.conf import settings

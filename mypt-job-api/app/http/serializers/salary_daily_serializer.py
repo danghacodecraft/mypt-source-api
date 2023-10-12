@@ -1,15 +1,15 @@
 from rest_framework import serializers
 
-from ...http.apis.inside_api import *
-from ...core.entities.redis_service import RedisService
-from ...core.helpers import my_datetime
-from ...core.helpers.global_variable import *
-from ...core.helpers.utils import *
-from ...http.models.salary_daily_total import SalaryDailyTotal
-from ...http.models.salary_monthly import SalaryMonthly
-from ...http.models.salary_daily import SalaryDaily
-from ...http.serializers.salary_configs_serializer import SalaryConfigsSerializer
-from ...http.apis.profile_api import (
+from http.apis.inside_api import *
+from core.entities.redis_service import RedisService
+from core.helpers import my_datetime
+from core.helpers.global_variable import *
+from core.helpers.utils import *
+from http.models.salary_daily_total import SalaryDailyTotal
+from http.models.salary_monthly import SalaryMonthly
+from http.models.salary_daily import SalaryDaily
+from http.serializers.salary_configs_serializer import SalaryConfigsSerializer
+from http.apis.profile_api import (
     get_all_employee_empty_salary_daily,
     get_all_employee_empty_salary_monthly,
     update_employee_salary_day_sync_status,

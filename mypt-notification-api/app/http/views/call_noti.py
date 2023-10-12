@@ -1,14 +1,14 @@
 import threading
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.noti import *
-from ...core.helpers.response import *
+from core.helpers.noti import *
+from core.helpers.response import *
 from ..validations.validate import *
 from ..serializers.notification_serializer import *
 from django.conf import settings as project_settings
 from datetime import datetime, timedelta
 from ..models.notification import Notification
 from django.db.models import Q
-from ...core.helpers.configs import get_config, remove_config
+from core.helpers.configs import get_config, remove_config
 import asyncio
 from django.http import HttpResponse
 from asgiref.sync import sync_to_async

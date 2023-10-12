@@ -1,6 +1,6 @@
-from ...http.models.setting_config_model import SettingConfig
-from ...http.serializers.setting_config_serializer import SettingConfigSerializer
-from ...http.entities import global_data
+from http.models.setting_config_model import SettingConfig
+from http.serializers.setting_config_serializer import SettingConfigSerializer
+from http.entities import global_data
 import json
 
 redis_service = global_data.redis_service

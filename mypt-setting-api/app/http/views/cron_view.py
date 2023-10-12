@@ -5,8 +5,8 @@ from ..models.cron_model import Cron
 from ..serializers.cron_serializer import CronSerializer
 from ..serializers.call_api_serializer import CallAPILoggerSerializer
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.schedule import CronBase
-from ...core.helpers.string_to_int_representation import string_to_int_representation
+from core.helpers.schedule import CronBase
+from core.helpers.string_to_int_representation import string_to_int_representation
 from django.conf import settings
 from django.db import close_old_connections
 

@@ -1,5 +1,5 @@
-from ...core.helpers.response import *
-from ...core.helpers.helper import *
+from core.helpers.response import *
+from core.helpers.helper import *
 from ..serializers.iqc_config_serializer import *
 from ..models.iqc_config import *
 from ..paginations.custom_pagination import *
@@ -32,13 +32,6 @@ class HealthView(ViewSet):
                                           , db=project_settings.REDIS_DATABASE_CENTRALIZED,
                                           password=project_settings.REDIS_PASSWORD_CENTRALIZED
                                           , decode_responses=True, charset="utf-8")
-
-        resSetRedisKey = redisInstance.set("test_connect", "Day la value cua Redis key test_connect abcdef 123969", 3600)
-        print("redis value : " + redisInstance.get("test_connect"))
-
-        print("ta co redis port : " + str(project_settings.REDIS_PORT_CENTRALIZED))
-        print("minh co redis password : " + project_settings.REDIS_PASSWORD_CENTRALIZED)
-        print("CHUNG TA co redis host : " + project_settings.REDIS_HOST_CENTRALIZED)
 
         resData = {
             "redisConInfo": {

@@ -2,58 +2,29 @@ import threading
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from ...myCore.helpers.response import *
+from http.helpers.response import *
 import jwt
-from app.myHttp.models.user_infos import UserInfos
-from app.myHttp.serializers.user_infos_serializer import UserInfosSerializer
-from app.myHttp.models.oauth_grants import OauthGrants
-from app.myHttp.serializers.oauth_grants_serializer import OauthGrantsSerializer
+from app.http.models.user_infos import UserInfos
+from app.http.serializers.user_infos_serializer import UserInfosSerializer
+from app.http.models.oauth_grants import OauthGrants
+from app.http.serializers.oauth_grants_serializer import OauthGrantsSerializer
 import uuid
 import ast
 import json
 from app.configs import app_settings
-from app.myCore.helpers import utils as utHelper
-from app.myHttp.Entities.user_infos_handler import UserInfosHandler
-from app.myHttp.Entities.oauth_client_grants_handler import OauthClientGrantsHandler
-from app.myCore.Entities.authHandlers.fpt_adfs import FptAdfs
-from app.myCore.Entities.authHandlers.account_credentials_grant import AccountCredentialsGrant
-from app.myCore.Entities.OAuth.refresh_token import RefreshToken
+from app.core.helpers import utils as utHelper
+from app.http.Entities.user_infos_handler import UserInfosHandler
+from app.http.Entities.oauth_client_grants_handler import OauthClientGrantsHandler
+from app.core.Entities.authHandlers.fpt_adfs import FptAdfs
+from app.core.Entities.authHandlers.account_credentials_grant import AccountCredentialsGrant
+from app.core.Entities.OAuth.refresh_token import RefreshToken
 from datetime import datetime
-from datetime import timedelta
-from app.myCore.Entities.my_jwt import MyJwt
-import redis
-import random
 from app.configs import response_codes
-import requests
-from django.conf import settings
 
 
 # Create your views here.
 @api_view(["POST"])
 def genUserToken(request):
-
-    # print("vao API user token day")
-
-    # curTsStr = str(datetime.now().timestamp())
-    # rd1 = random.randint(1, 9999999)
-    # rd2 = random.randint(1, 9999999)
-    # str1 = "abc123456789123" + curTsStr + "-" + str(rd1)
-    # str2 = "abc123456789123" + curTsStr + "-" + str(rd2)
-    # uuid5Str1 = uuid.uuid5(uuid.NAMESPACE_DNS, str1)
-    # uuid5Str2 = uuid.uuid5(uuid.NAMESPACE_DNS, str2)
-    #
-    # respondedData = {
-    #     "statusCode": 0,
-    #     "message": "OK",
-    #     "data": {
-    #         "curTsStr": curTsStr,
-    #         "str1": str1,
-    #         "str2": str2,
-    #         "uuid5Str1": uuid5Str1,
-    #         "uuid5Str2": uuid5Str2
-    #     }
-    # }
-    # return Response(respondedData, status.HTTP_200_OK)
 
     postData = request.data
     device_data = request.data.copy()
@@ -61,7 +32,6 @@ def genUserToken(request):
 
     # decode param userToken de lay ra email & name de luu vao bang user_infos
     userTokenDataStr = utHelper.decrypt_aes(app_settings.AES_SECRET_KEY, encodedUserTokenStr)
-    print("user token data str sau khi decrypt : " + userTokenDataStr)
     userTokenData = ast.literal_eval(userTokenDataStr)
     userEmail = userTokenData.get("email").lower()
     userFullName = userTokenData.get("name")
@@ -70,7 +40,6 @@ def genUserToken(request):
     oauthGrantModel = OauthGrants()
     grantType = postData.get("grantType")
     grantId = oauthGrantModel.findGrantIdByGrantType(grantType)
-    print("lay duoc grant id : " + str(grantId))
 
     # TODO: tim trong bang oauth_client_grants xem co 1 dong cua clientId va grantId nay hay ko
     ocgHandler = OauthClientGrantsHandler()

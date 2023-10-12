@@ -2,7 +2,7 @@ from ..serializers.emp_checkin_serializer import *
 from ..serializers.account_management_serializer import *
 from ..serializers.emp_checkin_history_serializer import *
 from ..paginations.custom_pagination import *
-from ...core.helpers.response import *
+from core.helpers.response import *
 from django.conf import settings as project_settings
 
 import redis

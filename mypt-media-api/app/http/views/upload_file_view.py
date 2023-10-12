@@ -1,6 +1,6 @@
 from ..entities import global_data
-from ...core.helpers.response import *
-from ...core.helpers.utils import *
+from core.helpers.response import *
+from core.helpers.utils import *
 # from ..paginations.custom_pagination import *
 from rest_framework.viewsets import ViewSet
 from datetime import *
@@ -10,7 +10,7 @@ from mimetypes import guess_extension
 from ..serializers.storage_uuid_serializer import *
 from ..serializers.list_folder_serializer import *
 
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import auth_session_handler as authSessionHandler
 
 
 class UploadFile(ViewSet):

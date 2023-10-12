@@ -1,13 +1,13 @@
 from datetime import datetime
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.response import response_data
+from core.helpers.response import response_data
 from ..validations.device_permission_validator import *
 from ..serializers.device_permission_serializer import *
 from django.db import connections
 
-from ...core.helpers import auth_session_handler as authSessionHandler, utils_call_api
-from ...core.helpers.utils import *
-from ...http.serializers.configs_serializer import ProfileConfigSerializer
+from core.helpers import auth_session_handler as authSessionHandler, utils_call_api
+from core.helpers.utils import *
+from http.serializers.configs_serializer import ProfileConfigSerializer
 import json
 
 

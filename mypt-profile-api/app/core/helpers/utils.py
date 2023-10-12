@@ -13,7 +13,7 @@ from Cryptodome.Cipher import AES
 from ..entities.centralized_session import CentralizedSession
 
 # GHI LOG
-from ...core.helpers.service_api import *
+from core.helpers.service_api import *
 from django.conf import settings as project_settings
 
 

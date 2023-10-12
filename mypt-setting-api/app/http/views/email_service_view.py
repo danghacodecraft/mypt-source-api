@@ -4,10 +4,10 @@ import datetime
 import json
 import copy
 from django.conf import settings
-from ...core.helpers.schedule import CronBase
-from ...core.helpers.response import response_data
-from ...core.helpers.capture_image_via_url import capturer_as_base64
-from ...core.helpers.string_to_int_representation import string_to_int_representation
+from core.helpers.schedule import CronBase
+from core.helpers.response import response_data
+from core.helpers.capture_image_via_url import capturer_as_base64
+from core.helpers.string_to_int_representation import string_to_int_representation
 from ..serializers.email_template_serializer import EmailTemplateSerializer
 from ..serializers.email_schedule_information_serializer import EmailScheduleInformationSerializer
 from ..validation.email_service_validator import EmailServiceValidation,\

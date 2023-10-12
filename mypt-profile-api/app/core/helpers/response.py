@@ -1,5 +1,5 @@
 from rest_framework.response import Response
-from ....app.core.helpers.global_data import *
+from app.core.helpers.global_data import *
 
 def response_data(data="", status=1, message="Success"):
     result = {

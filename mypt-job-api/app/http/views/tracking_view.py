@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.response import *
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers.response import *
+from core.helpers import auth_session_handler as authSessionHandler
 
 
 class TrackingView(ViewSet):

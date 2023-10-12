@@ -1,9 +1,9 @@
-from ....http.entities.sdk_refresh_token_handler import SdkRefreshTokenHandler
-from ....http.entities.sdk_users_handler import SdkUsersHandler
+from http.entities.sdk_refresh_token_handler import SdkRefreshTokenHandler
+from http.entities.sdk_users_handler import SdkUsersHandler
 from ..auth_handlers.token_handler import TokenHandler
 from app.core.entities.my_jwt import MyJwt
 from datetime import datetime
-from ....http.models.sdk_refresh_token import SdkRefreshToken
+from http.models.sdk_refresh_token import SdkRefreshToken
 
 
 class RefreshTokenGrant:

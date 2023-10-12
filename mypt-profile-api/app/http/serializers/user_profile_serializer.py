@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from ....app.http.models.user_profile import UserProfile
-from ...core.helpers import helper
+from app.http.models.user_profile import UserProfile
+from core.helpers import helper
 
 
 class UserProfileSerializer(serializers.ModelSerializer):

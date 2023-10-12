@@ -1,6 +1,6 @@
-from ...http.models.notification_config import NotificationConfigs
-from ...http.serializers.notification_serializer import NotificationConfigsSerializer
-from ...http.entities import global_data
+from http.models.notification_config import NotificationConfigs
+from http.serializers.notification_serializer import NotificationConfigsSerializer
+from http.entities import global_data
 import json
 
 redis_service = global_data.redis_service

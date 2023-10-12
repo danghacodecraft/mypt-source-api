@@ -16,7 +16,7 @@ import re
 import pillow_heif
 from PIL import Image
 
-from ...core.helpers.global_variables import MESSAGE_UPLOAD_TYPE
+from core.helpers.global_variables import MESSAGE_UPLOAD_TYPE
 
 
 def aes256():

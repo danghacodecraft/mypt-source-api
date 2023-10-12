@@ -4,11 +4,11 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from app.core.helpers.auth_session_handler import getUserAuthSessionData
-from ...core.helpers.response import response_data
+from core.helpers.response import response_data
 from rest_framework.viewsets import ViewSet
 from django.conf import settings as project_settings
 import redis
-from ...core.helpers.response import response_data
+from core.helpers.response import response_data
 
 
 class SettingHealthCheckView(ViewSet):

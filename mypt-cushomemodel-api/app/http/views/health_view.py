@@ -6,7 +6,7 @@ from rest_framework.viewsets import ViewSet
 from ..models.configs import Configs
 from ..paginations.custom_pagination import *
 from ..serializers.config_serializer import ConfigsSerializer
-from ...core.helpers.response import *
+from core.helpers.response import *
 
 
 class HealthView(ViewSet):

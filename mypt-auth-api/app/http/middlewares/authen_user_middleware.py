@@ -3,9 +3,9 @@ from django.http import JsonResponse
 from rest_framework import status
 from datetime import datetime
 from app.configs import app_settings
-from app.myCore.Entities.my_jwt import MyJwt
-from app.myCore.Entities.centralized_session import CentralizedSession
-from app.myCore.helpers import utils as utHelper
+from app.core.Entities.my_jwt import MyJwt
+from app.core.Entities.centralized_session import CentralizedSession
+from app.core.helpers import utils as utHelper
 
 class AuthenUserMiddleware:
     def __init__(self, get_response):

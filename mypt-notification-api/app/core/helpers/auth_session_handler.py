@@ -1,5 +1,5 @@
 from django.conf import settings as project_settings
-from ...core.entities.my_jwt import MyJwt
+from core.entities.my_jwt import MyJwt
 import redis
 import ast
 

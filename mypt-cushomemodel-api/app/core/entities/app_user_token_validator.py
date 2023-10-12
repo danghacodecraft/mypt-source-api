@@ -8,7 +8,7 @@ from django.conf import settings as project_settings
 
 from app.configs import app_settings
 from app.core.helpers import utils as utHelper
-from ...core.entities.my_rsa_alogrithm import MyRSA
+from core.entities.my_rsa_alogrithm import MyRSA
 
 
 class AppUserTokenValidator:

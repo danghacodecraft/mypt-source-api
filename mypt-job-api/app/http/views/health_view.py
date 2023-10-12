@@ -1,5 +1,5 @@
-from ...core.helpers.response import *
-from ...core.helpers.helper import *
+from core.helpers.response import *
+from core.helpers.helper import *
 from ..models.kpi_info import *
 from ..serializers.kpi_info_serializer import *
 from ..paginations.custom_pagination import *

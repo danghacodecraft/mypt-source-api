@@ -1,5 +1,5 @@
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.response import response_data
+from core.helpers.response import response_data
 from ..models.email_template import EmailTemplate
 from ..serializers.email_template_serializer import EmailTemplateSerializer
 

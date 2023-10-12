@@ -1,4 +1,4 @@
-from app.myHttp.models.user_infos import UserInfos
+from app.http.models.user_infos import UserInfos
 from rest_framework.serializers import ModelSerializer
 
 class UserInfosSerializer(ModelSerializer):

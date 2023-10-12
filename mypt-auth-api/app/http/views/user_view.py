@@ -2,13 +2,13 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from app.configs import app_settings
-from app.myCore.helpers.auth_session_handler import getUserAuthSessionData
-from app.myHttp.Entities.user_infos_handler import UserInfosHandler
-from app.myHttp.models.user_infos import UserInfos
-from app.myHttp.serializers.user_infos_serializer import UserInfosSerializer
-from app.myHttp.validations.proactively_update_device_token_validate import UpdateDeviceTokenValidate
-from ...myCore.helpers.response import response_data
-from app.myHttp.Apis.mypt_profile_apis import MyPtProfileApis
+from app.core.helpers.auth_session_handler import getUserAuthSessionData
+from app.http.Entities.user_infos_handler import UserInfosHandler
+from app.http.models.user_infos import UserInfos
+from app.http.serializers.user_infos_serializer import UserInfosSerializer
+from app.http.validations.proactively_update_device_token_validate import UpdateDeviceTokenValidate
+from http.helpers.response import response_data
+from app.http.Apis.mypt_profile_apis import MyPtProfileApis
 
 
 # Create your views here.

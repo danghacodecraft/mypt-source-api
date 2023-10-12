@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ...core.helpers import my_datetime
+from core.helpers import my_datetime
 
 
 class SalaryDailyValidate(serializers.Serializer):

@@ -3,9 +3,9 @@ import json
 import requests
 
 from ..entities import global_data
-from ...core.helpers.response import *
-from ...core.helpers.utils import *
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers.response import *
+from core.helpers.utils import *
+from core.helpers import auth_session_handler as authSessionHandler
 from ...configs.app_settings import AES_SECRET_KEY
 # from ..paginations.custom_pagination import *
 from rest_framework.viewsets import ViewSet

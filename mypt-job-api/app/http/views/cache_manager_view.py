@@ -1,8 +1,8 @@
 import json
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.response import *
-from ...core.helpers.utils import *
-from ...core.entities.redis_service import RedisService
+from core.helpers.response import *
+from core.helpers.utils import *
+from core.entities.redis_service import RedisService
 
 
 class CacheManagerView(ViewSet):

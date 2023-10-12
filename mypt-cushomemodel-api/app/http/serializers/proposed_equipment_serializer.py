@@ -2,8 +2,8 @@ from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
 
 from ..models.proposed_equipment import ProposedEquipment
-from ...core.helpers.my_datetime import getFormatDatetimeNow
-from ...core.helpers.utils import return_choice_name, return_choice_id_or_code
+from core.helpers.my_datetime import getFormatDatetimeNow
+from core.helpers.utils import return_choice_name, return_choice_id_or_code
 
 
 class ProposedEquipmentSerializer(ModelSerializer):

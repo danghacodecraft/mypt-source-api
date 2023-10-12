@@ -1,9 +1,9 @@
 from datetime import datetime
 from django.conf import settings as project_settings
 from ...configs.service_api_config import SERVICE_CONFIG
-from ...core.helpers.helper import call_api
-from ...core.helpers import global_variable
-from ...core.helpers import my_datetime
+from core.helpers.helper import call_api
+from core.helpers import global_variable
+from core.helpers import my_datetime
 
 APP_ENV = project_settings.APP_ENVIRONMENT
 PROFILE_API = SERVICE_CONFIG["profile_api"]

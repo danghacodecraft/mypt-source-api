@@ -6,7 +6,7 @@ from rest_framework.serializers import ModelSerializer
 
 from ..models.build_house_model import BuildHouseModel
 from ..validation.simulate_wifi_image_validation import SimulateWifiImageValidate
-from ...core.helpers.my_datetime import getFormatDatetimeNow
+from core.helpers.my_datetime import getFormatDatetimeNow
 
 
 class BuildHouseModelSerializer(ModelSerializer):

@@ -4,8 +4,8 @@ from rest_framework.viewsets import ModelViewSet
 
 from ..models.configs import Configs
 from ..serializers.config_serializer import ConfigsSerializer
-from ...core.helpers.my_datetime import getFormatDatetimeNow
-from ...core.helpers.response import *
+from core.helpers.my_datetime import getFormatDatetimeNow
+from core.helpers.response import *
 
 
 class ConfigView(ModelViewSet):

@@ -12,9 +12,9 @@ from Crypto.Util.Padding import pad
 from rest_framework.utils import json
 from ..entities.centralized_session import CentralizedSession
 from datetime import datetime, timedelta, date
-from ...core.helpers.iqc_global_variable import VIEW_IMAGE_AUTH_PUBLIC, url_img
+from core.helpers.iqc_global_variable import VIEW_IMAGE_AUTH_PUBLIC, url_img
 from ...configs import app_settings
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import auth_session_handler as authSessionHandler
 
 # GHI LOG
 from ...configs.service_api_config import *

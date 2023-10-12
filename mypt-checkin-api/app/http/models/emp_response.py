@@ -1,5 +1,5 @@
 from django.db import models
-from ...core.helpers.global_variables import *
+from core.helpers.global_variables import *
 
 
 

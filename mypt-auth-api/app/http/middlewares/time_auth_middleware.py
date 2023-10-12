@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from django.http import JsonResponse
 from rest_framework import status
-from app.myCore.helpers import utils as utHelper
+from app.core.helpers import utils as utHelper
 from datetime import datetime
 from app.configs import app_settings
 

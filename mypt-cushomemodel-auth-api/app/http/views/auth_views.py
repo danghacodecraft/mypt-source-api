@@ -12,8 +12,8 @@ from django.conf import settings as project_settings
 
 from ..models.rsa_key import RSAKey
 from ..serializers.rsa_key_serializer import RSAKeySerializer
-from ...core.entities.my_rsa_alogrithm import MyRSA
-from ...core.helpers.response import *
+from core.entities.my_rsa_alogrithm import MyRSA
+from core.helpers.response import *
 
 from app.core.entities.app_user_token_validator import AppUserTokenValidator
 from app.http.entities.sdk_users_handler import SdkUsersHandler
@@ -24,7 +24,7 @@ from app.core.entities.auth_handlers.account_credentials_grant import AccountCre
 from app.core.entities.auth_handlers.refresh_token_grant import RefreshTokenGrant
 from app.configs import response_codes
 
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import auth_session_handler as authSessionHandler
 
 
 class CusHomeModelAuthView(ViewSet):

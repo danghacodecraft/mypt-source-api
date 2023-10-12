@@ -3,11 +3,11 @@ from rest_framework.viewsets import ViewSet
 
 from ..models.proposed_equipment import ProposedEquipment
 from ..serializers.proposed_equipment_serializer import ProposedEquipmentSerializer
-from ...core.entities.app_user_token_validator import AppUserTokenValidator
-from ...core.helpers import global_variable as gb
-from ...core.helpers.auth_session_handler import getUserAuthSessionData
-from ...core.helpers.response import *
-from ...core.helpers.utils import return_choice_name
+from core.entities.app_user_token_validator import AppUserTokenValidator
+from core.helpers import global_variable as gb
+from core.helpers.auth_session_handler import getUserAuthSessionData
+from core.helpers.response import *
+from core.helpers.utils import return_choice_name
 
 
 class ProposedEquipmentView(ViewSet):

@@ -1,9 +1,9 @@
 from django.http import JsonResponse
 from datetime import datetime
-from ....app.configs import app_settings
-from ....app.core.entities.centralized_session import CentralizedSession
+from app.configs import app_settings
+from app.core.entities.centralized_session import CentralizedSession
 # from app.http.entities import global_data
-from ....app.core.helpers import utils as utHelper
+from app.core.helpers import utils as utHelper
 
 
 class AuthenUserMiddleware:

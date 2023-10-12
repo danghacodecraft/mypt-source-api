@@ -4,7 +4,7 @@ from app.http.serializers.account_management_serializer import *
 from app.http.serializers.emp_response_serializer import *
 from app.core.helpers.utils import *
 from app.core.helpers.call_api import *
-from ...core.helpers.response import *
+from core.helpers.response import *
 
 def insert_log_get_coordinate(str_time_now, type_checkin, coordinate, status_checkin, __day, emp_code):
     ok = False

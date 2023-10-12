@@ -1,7 +1,7 @@
 import json
 from rest_framework.viewsets import ViewSet
-from ...myCore.helpers.response import response_data
-from ...myCore.helpers import auth_session_handler as authSessionHandler
+from http.helpers.response import response_data
+from http.helpers import auth_session_handler as authSessionHandler
 import uuid
 from ..models.user_senders import *
 from ..models.sender_tokens import *
@@ -11,7 +11,7 @@ from ..apis.fpt_ai_chat_apis import *
 from django.conf import settings as project_settings
 from ...configs import app_settings
 from datetime import datetime
-from ...myCore.helpers import utils as utHelper
+from http.helpers import utils as utHelper
 from ..models.user_infos import UserInfos
 from ..serializers.user_infos_serializer import UserInfosSerializer
 from ..entities.permission_handler import *

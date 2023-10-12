@@ -1,5 +1,5 @@
 from app.http.views.service_logger_view import ServiceLoggerViewSet
-from ...core.entities.redis_service import RedisService
+from core.entities.redis_service import RedisService
 
 authUserSessionData = None
 requestInfo = None

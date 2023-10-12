@@ -8,7 +8,7 @@ import ast
 import rsa
 import base64
 import json
-from ...core.entities.my_rsa_alogrithm import MyRSA
+from core.entities.my_rsa_alogrithm import MyRSA
 
 class AppUserTokenValidator:
     redisInstance = None

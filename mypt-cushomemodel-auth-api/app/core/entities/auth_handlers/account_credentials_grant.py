@@ -1,4 +1,4 @@
-from ....http.entities.sdk_users_handler import SdkUsersHandler
+from http.entities.sdk_users_handler import SdkUsersHandler
 from ..auth_handlers.token_handler import TokenHandler
 
 class AccountCredentialsGrant:

@@ -3,11 +3,11 @@ from rest_framework.response import Response
 
 
 from ..serializers.response_content_serializer import *
-from ...core.helpers.response import *
+from core.helpers.response import *
 from rest_framework.decorators import api_view
 
-from ...http.entities import global_data
-from ...core.helpers import auth_session_handler as authSessionHandler
+from http.entities import global_data
+from core.helpers import auth_session_handler as authSessionHandler
 
 class ListDataView(ViewSet):
     def list_response(self, request):

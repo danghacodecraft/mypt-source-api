@@ -1,5 +1,5 @@
 from django.conf import settings
-from ...http.models.user_permission import UserPermission
+from http.models.user_permission import UserPermission
 
 def fill_user_permission(user_id: int, user_info: dict, curr_permission: list):
     try:

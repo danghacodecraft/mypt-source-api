@@ -9,7 +9,7 @@ from ..models.setting_function_icons_model import *
 from ..serializers.ptq_serializer import *
 from ..serializers.setting_home_tabs_serializer import *
 from ..serializers.setting_users_home_tabs_serializer import SettingUsersHomeTabsSerializer
-from ...core.helpers.response import *
+from core.helpers.response import *
 from rest_framework.viewsets import ViewSet
 import json
 # from datetime import datetime
@@ -25,11 +25,11 @@ from ..threading.handle_company import *
 from app.core.helpers.utils import *
 import redis
 import ast
-from ...core.helpers.birthday_is_today import birthday_is_today
+from core.helpers.birthday_is_today import birthday_is_today
 from django.db.models import Q
 from ..models.theme_model import ThemeManager
 from ..serializers.theme_manager_serializer import ThemeManagerSerializer
-from ...core.helpers.configs import get_config, remove_config
+from core.helpers.configs import get_config, remove_config
 
 
 # Just only has 1 CRUD API

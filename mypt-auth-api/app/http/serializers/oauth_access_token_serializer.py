@@ -1,4 +1,4 @@
-from app.myHttp.models.oauth_access_token import OauthAccessToken
+from app.http.models.oauth_access_token import OauthAccessToken
 from rest_framework.serializers import ModelSerializer
 
 class OauthAccessTokenSerializer(ModelSerializer):

@@ -1,10 +1,10 @@
 import json
 
 from rest_framework import serializers
-from ...http.models.salary_configs import SalaryConfigs
-from ...core.helpers.global_variable import *
-from ...core.helpers.utils import empty
-from ...core.entities.redis_service import RedisService
+from http.models.salary_configs import SalaryConfigs
+from core.helpers.global_variable import *
+from core.helpers.utils import empty
+from core.entities.redis_service import RedisService
 
 
 class SalaryConfigsSerializer(serializers.ModelSerializer):

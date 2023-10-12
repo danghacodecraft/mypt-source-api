@@ -8,20 +8,20 @@ from ..serializers.send_email_serializer import *
 from ..serializers.account_management_serializer import *
 from ..serializers.response_content_serializer import *
 from ..paginations.custom_pagination import *
-from ...core.helpers.response import *
-from ...core.helpers.utils import *
-from ...core.helpers.utils_sql import *
-from ...core.helpers.call_api import *
-from ...core.helpers.global_variables import *
+from core.helpers.response import *
+from core.helpers.utils import *
+from core.helpers.utils_sql import *
+from core.helpers.call_api import *
+from core.helpers.global_variables import *
 
-from ...http.entities import global_data
+from http.entities import global_data
 from ..serializers.emp_response_serializer import *
 
 from django.template.loader import get_template
-from ...core.helpers.mail import *
+from core.helpers.mail import *
 import threading
 
-from ...core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import auth_session_handler as authSessionHandler
 class HandleMail(threading.Thread):
 
     def __init__(self, subject, message, recipient_list):

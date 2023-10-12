@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.response import *
-from ...http.serializers.salary_configs_serializer import *
+from core.helpers.response import *
+from http.serializers.salary_configs_serializer import *
 
 
 class ConfigManagerView(ViewSet):

@@ -5,13 +5,13 @@ from django.db.models import Q
 from drf_spectacular.utils import extend_schema, OpenApiResponse
 from rest_framework import status
 
-from ...http.paginations.custom_pagination import *
+from http.paginations.custom_pagination import *
 from ..serializers.ptq_serializer import *
 from ..validations.ptq_validate import *
-from ...core.helpers.response import *
+from core.helpers.response import *
 from rest_framework.viewsets import ViewSet
 from datetime import *
-from ...core.helpers.utils_call_api import *
+from core.helpers.utils_call_api import *
 
 
 class PtqView(ViewSet):

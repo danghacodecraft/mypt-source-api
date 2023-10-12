@@ -1,9 +1,9 @@
 import json
 from rest_framework.viewsets import ViewSet
 from ..models.setting_config_model import SettingConfig
-from ...core.helpers.response import response_data
+from core.helpers.response import response_data
 from ..serializers.setting_config_serializer import SettingConfigSerializer
-from ...core.entities.redis_service import RedisService
+from core.entities.redis_service import RedisService
 
 class SettingConfigViewSet(ViewSet):
     def __init__(self):

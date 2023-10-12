@@ -1,5 +1,5 @@
 from rest_framework.response import Response
-from ...core.helpers.global_variable import *
+from core.helpers.global_variable import *
 
 from math import ceil
 

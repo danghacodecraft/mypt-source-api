@@ -1,4 +1,4 @@
-from app.myHttp.models.user_senders import *
+from app.http.models.user_senders import *
 from rest_framework.serializers import ModelSerializer
 
 class UserSendersSerializer(ModelSerializer):

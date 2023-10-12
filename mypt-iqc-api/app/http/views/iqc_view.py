@@ -10,14 +10,14 @@ from app.configs import app_settings
 from ..models.iqc_config import IqcConfig
 from ..validations.iqc_validation import *
 from ...configs.service_api_config import IQC_API, SERVICE_CONFIG
-from ...core.helpers import auth_session_handler as authSessionHandler
-from ...core.helpers import create_image_iqc
-from ...core.helpers import helper
-from ...core.helpers.global_variable import *
-from ...core.helpers.iqc_global_variable import *
-from ...core.helpers.my_datetime import getSecondFromNowToLastOfDay
-from ...core.helpers.response import *
-from ...core.helpers.utils import *
+from core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import create_image_iqc
+from core.helpers import helper
+from core.helpers.global_variable import *
+from core.helpers.iqc_global_variable import *
+from core.helpers.my_datetime import getSecondFromNowToLastOfDay
+from core.helpers.response import *
+from core.helpers.utils import *
 import ast
 
 

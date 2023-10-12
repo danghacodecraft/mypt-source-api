@@ -4,7 +4,7 @@ import requests
 
 from ...configs.variable import PROXIES
 from ..validations.json_validate import *
-from ...core.helpers.response import *
+from core.helpers.response import *
 
 class JsonView(ViewSet):
     def call_api(self, url):

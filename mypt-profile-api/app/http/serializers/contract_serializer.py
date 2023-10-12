@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from ..models.contract import Contract
-from ...core.helpers import helper
+from core.helpers import helper
 from datetime import datetime
 
 

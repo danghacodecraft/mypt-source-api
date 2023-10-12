@@ -29,14 +29,14 @@ from ..serializers.provinces_and_regions_serializer import *
 from ..serializers.safe_card_serializer import *
 from ..serializers.user_profile_serializer import *
 from ...configs.variable import *
-from ...core.helpers import auth_session_handler as authSessionHandler
-from ...core.helpers import global_data
-from ...core.helpers.helper import *
-from ...core.helpers.response import *
+from core.helpers import auth_session_handler as authSessionHandler
+from core.helpers import global_data
+from core.helpers.helper import *
+from core.helpers.response import *
 # GHI LOG
-from ...core.helpers.utils import *
-from ...http.models.profile import *
-from ...http.validations.profile_validate import *
+from core.helpers.utils import *
+from http.models.profile import *
+from http.validations.profile_validate import *
 
 
 class ProfileView(ViewSet):

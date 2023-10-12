@@ -2,8 +2,8 @@ from rest_framework import serializers
 from ..models.profile import *
 from rest_framework.serializers import ModelSerializer
 
-from ...core.helpers import helper
-# from ...core.helpers import my_datetime
+from core.helpers import helper
+# from core.helpers import my_datetime
 from datetime import datetime
 from dateutil.relativedelta import relativedelta as rd
 

@@ -2,9 +2,9 @@ import json
 from datetime import datetime
 from django.db import transaction
 from rest_framework.viewsets import ViewSet
-from ...http.models.iqc_config import IqcConfig
-from ...core.helpers import global_variable
-from ...core.helpers.response import response_data
+from http.models.iqc_config import IqcConfig
+from core.helpers import global_variable
+from core.helpers.response import response_data
 
 
 class ConfigManagerView(ViewSet):

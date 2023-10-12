@@ -2,7 +2,7 @@ from email.mime.image import MIMEImage
 from django.core.mail import send_mail
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
-from ...core.helpers import *
+from core.helpers import *
 import base64
 import requests
 import os

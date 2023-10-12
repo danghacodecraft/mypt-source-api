@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from ..validations.validate import NotificationValidator
-from ...core.helpers.response import *
+from core.helpers.response import *
 from rest_framework import status
 from django.db import connection
 from rest_framework.viewsets import ViewSet
@@ -12,10 +12,10 @@ from ..models.notification_topic import *
 from ..models.notification_topic_group import *
 from ..serializers.notification_serializer import *
 
-from ...core.helpers.fcm import FCMApi
-from ...core.helpers.utils import *
+from core.helpers.fcm import FCMApi
+from core.helpers.utils import *
 from ..paginations.custom_pagination import *
-from ...core.helpers.auth_session_handler import getUserAuthSessionData
+from core.helpers.auth_session_handler import getUserAuthSessionData
 from django.conf import settings as project_settings
 from datetime import datetime
 

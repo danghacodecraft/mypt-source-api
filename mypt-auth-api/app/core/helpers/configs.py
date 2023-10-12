@@ -1,6 +1,6 @@
-from ...http.models.newsevent_configs import NewseventConfig
-from ...http.serializers.newsevent_configs_serializer import NewseventConfigSerializer
-from ...http.entities import global_data
+from http.models.newsevent_configs import NewseventConfig
+from http.serializers.newsevent_configs_serializer import NewseventConfigSerializer
+from http.entities import global_data
 import json
 
 redis_service = global_data.redis_service

@@ -1,5 +1,5 @@
 from django.db import models
-from ...core.helpers.utils import *
+from core.helpers.utils import *
 from ...configs.service_api_config import *
 import json
 from django.conf import settings as project_settings

@@ -2,7 +2,7 @@ from rest_framework.viewsets import ViewSet
 # from ..models.profile import Employee
 
 from ..serializers.employee_serializer import *
-from ....app.core.helpers.response import response_data
+from app.core.helpers.response import response_data
 from datetime import *
 
 class BirthDayViewSet(ViewSet):

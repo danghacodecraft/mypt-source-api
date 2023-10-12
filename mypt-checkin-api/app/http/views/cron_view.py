@@ -1,15 +1,15 @@
 from rest_framework.viewsets import ViewSet
-from ...core.helpers.response import *
+from core.helpers.response import *
 from ...cron import *
 import requests
 from ..models.emp_checkin import *
 from ..models.account_management_tb import *
 from ..serializers.emp_checkin_serializer import *
 from ..serializers.account_management_serializer import *
-from ...core.helpers.utils import *
-from ...core.helpers.utils_sql import *
-from ...core.helpers.call_api import *
-from ...core.helpers.schedule import mypt_schedule
+from core.helpers.utils import *
+from core.helpers.utils_sql import *
+from core.helpers.call_api import *
+from core.helpers.schedule import mypt_schedule
 import json
 
 

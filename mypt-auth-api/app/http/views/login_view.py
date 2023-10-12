@@ -1,7 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from ...myCore.helpers.response import *
+from http.helpers.response import *
 from django.shortcuts import redirect
 import jwt
 import base64
@@ -9,22 +9,22 @@ import json
 from datetime import datetime
 from django.conf import settings as project_settings
 from app.configs import app_settings
-from app.myCore.helpers import utils as utHelper
-from app.myHttp.Entities import global_data
-from app.myHttp.Apis.fpt_adfs_apis import FptAdfsApis
-from app.myHttp.Entities.oauth_client_grants_handler import OauthClientGrantsHandler
-from app.myHttp.Entities.authen_handler import AuthenHandler
+from app.core.helpers import utils as utHelper
+from app.http.Entities import global_data
+from app.http.Apis.fpt_adfs_apis import FptAdfsApis
+from app.http.Entities.oauth_client_grants_handler import OauthClientGrantsHandler
+from app.http.Entities.authen_handler import AuthenHandler
 import redis
 import time
-from app.myHttp.Apis.mypt_profile_apis import MyPtProfileApis
+from app.http.Apis.mypt_profile_apis import MyPtProfileApis
 from ..apis.microsoft_azure_apis import MicrosoftAzureApis
-from app.myCore.Entities.my_jwt import MyJwt
-from ...myCore.helpers import auth_session_handler as authSessionHandler
+from app.core.Entities.my_jwt import MyJwt
+from http.helpers import auth_session_handler as authSessionHandler
 
 # import uuid
-# from app.myHttp.models.so_vong_quay import SoVongQuay
-# from app.myHttp.models.lich_su_quay_so import LichSuQuaySo
-# from app.myHttp.serializers.sovongquay_serializer import SoVongQuaySerializer
+# from app.http.models.so_vong_quay import SoVongQuay
+# from app.http.models.lich_su_quay_so import LichSuQuaySo
+# from app.http.serializers.sovongquay_serializer import SoVongQuaySerializer
 
 # Create your views here.
 @api_view(["GET"])

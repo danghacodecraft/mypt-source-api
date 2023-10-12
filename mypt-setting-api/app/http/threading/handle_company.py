@@ -1,6 +1,6 @@
 import threading
 from ...configs.service_api_config import SERVICE_CONFIG
-from ...core.helpers.utils import *
+from core.helpers.utils import *
 from django.conf import settings as project_settings
 from ..entities import global_data
 import json
