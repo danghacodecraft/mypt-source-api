@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ViewSet
 from ...serializers.employee_serializer import *
-from profile_app.core.helpers.response import response_data
-from profile_app.core.helpers.utils import *
+from .....app.core.helpers.response import response_data
+from .....app.core.helpers.utils import *
 
 class CheckinView(ViewSet):
     def api_get_info_from_emp_code(self, request):

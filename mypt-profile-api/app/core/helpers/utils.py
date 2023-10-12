@@ -10,11 +10,9 @@ from datetime import datetime
 from Crypto.Util.Padding import pad
 from Cryptodome.Cipher import AES
 
-from profile_app.core.helpers.global_data import *
 from ..entities.centralized_session import CentralizedSession
 
 # GHI LOG
-from ...configs.service_api_config import *
 from ...core.helpers.service_api import *
 from django.conf import settings as project_settings
 

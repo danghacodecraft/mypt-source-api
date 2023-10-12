@@ -1,7 +1,7 @@
 from asyncio import Task
 from rest_framework.viewsets import ViewSet
 
-from profile_app.core.helpers.response import response_data
+from ....app.core.helpers.response import response_data
 from ...cron import *
 
 class Cron(ViewSet):
