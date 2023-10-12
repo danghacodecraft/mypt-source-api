@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <body style="font-size: 17px;line-height: 36px;font-family: 'Times New Roman'   , Times, serif ">
+        <h3 style="text-align: center; font-size: 2rem; color: red ">THÔNG TIN BÀI VIẾT MỚI</h3>
+        <div>
+            <div>
+                <p style="font-weight: bolder; font-size: 24px ">{{nameImprovedCar}}</p>
+                <p>Người đề xuất: {{emailCreate}}</p>
+                <!-- <p>Phòng ban: {{phong_ban}}</p> -->
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <p style="font-size: 18px ">Thực trạng:</p>
+                        <p>{{currentStatus}}</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 18px ">Mục tiêu/ Mong muốn:</p>
+                        <p>{{purpose}}</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 18px ">Giải pháp:</p>
+                        <p>{{solution}}</p>
+                    </li>
+                </ul>
+                <div>
+                    <div style="font-size: 20px "><span>Phân tích sáng kiến/đề xuất</span></div>
+                    <ul>
+                        <li>Đánh giá tính hiệu quả: {{effective}}</li>
+                        <li>Đánh giá tính sáng tạo: {{creative}}</li>
+                        <li>Đánh giá tính khả thi: {{possibility}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>Xem nội dung chi tiết bài viết và cho ý kiến đánh giá <a style="color: blue; text-decoration: underline " href="https://mytinpnc.vn/api/auth/xecaitien/{{id}} "> tại đây </a></p>
+        <p><i style="font-weight: bold ">Trân trọng.</i> <br></p>
+    </body>
+
+</html>

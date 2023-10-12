@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        p.style-me {
+            margin:0cm;font-size:15px;font-family:"Calibri",sans-serif;
+        }
+        td.style-me {
+            width: 300pt;padding: 0cm 5.4pt;vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="style-me">Kính gửi Anh/Chị,</p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">My PT gửi đến Anh/Chị thông tin chi tiết về ý tưởng cải tiến mới vào lúc {{updateTime}} {{updateDate}}</p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">Nhân sự đề xuất: {{emailCreate}}</p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">Vùng: {{parentDepart}}</p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">Phòng ban: {{agency}}</p>
+    <p class="style-me">&nbsp;</p>
+
+    <p class="style-me"><strong>Nội dung chi tiết về ý
+            tưởng:</strong></p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">Đề xuất: {{nameImprovedCar}}</p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">&nbsp;</p>
+    <table style="border-collapse:collapse;border:none;">
+        <tbody>
+            <tr>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'><img width="43" src="cid:icon1" alt="image"></p>
+                </td>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'><img width="43" src="cid:icon2" alt="image"></p>
+                </td>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'><img width="43" src="cid:icon3" alt="image"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'>
+                        <strong>Hiện trạng</strong></p>
+                </td>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'><strong>Mục
+                            tiêu</strong></p>
+                </td>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'>
+                        <strong>Giải pháp</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'>
+                        {{currentStatus}}</p>
+                </td>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'>{{purpose}}
+                    </p>
+                </td>
+                <td class="style-me">
+                    <p class="style-me" style='text-align:center;'>
+                        {{solution}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me">&nbsp;</p>
+    <p class="style-me" style='text-align:center;'><strong>&nbsp;</strong></p>
+    <p class="style-me" style='text-align:center;'><strong>&nbsp;</strong></p>
+    {% if len_img %} <p style='margin-left:345pt;font-size:15px;font-family:"Calibri",sans-serif;font-weight:800;'>
+        Chi tiết hình ảnh</p> {% endif %}
+    <p class="style-me" style='text-align:center;'><strong>&nbsp;</strong></p>
+    <p class="style-me" style='text-align:center;'><strong>&nbsp;</strong></p>
+                {% for o in cid_img %}
+                        <img width="300pt"  style="width: 300pt !important;" src="cid:{{o}}"
+                                    alt="image">
+                {% endfor %}
+    <p class="style-me" style='text-align:center;'><strong>&nbsp;</strong></p>
+    <p class="style-me">Anh/Chị vui lòng nhấp vào nút Đánh giá bên dưới để thực hiện đánh giá bài viết</p>
+    <p class="style-me"><strong>&nbsp;</strong></p>
+    <a href="{{deeplink}}">Đánh giá</a>
+    <p class="style-me"><strong>&nbsp;</strong></p>
+    <p class="style-me"><strong>&nbsp;</strong></p>
+    <p class="style-me"><strong>&nbsp;</strong></p>
+    <p class="style-me">Xin cảm ơn!</p>
+    <p class="style-me">My PT</p>
+
+    {% if not app_env_production %}
+    <p class="style-me"><strong>&nbsp;</strong></p>
+    <p class="style-me"><strong>&nbsp;</strong></p>
+    <p class="style-me">P/S: Đây là email từ môi trường test, xin vui lòng bỏ qua</p>
+    {% endif %}
+
+</body>
+
+</html>

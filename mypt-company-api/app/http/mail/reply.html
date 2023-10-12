@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail đánh giá</title>
+</head>
+
+<body>
+    <div>
+        <p>Dear Anh/Chị</p>
+    </div>
+    <div>
+        <p>{{titleContent}} </p>
+    </div>
+    <div>
+        <p>Chi tiết đánh giá: </p>
+    </div>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    <p>Đánh giá tính hiệu quả:
+                        {% if effective %}
+                        {{ effective }}
+                        {% else %}
+                        {{"  ---  "}}
+                        {% endif %}
+                    </p>
+                </li>
+                <li>
+                    <p>Đánh giá tính sáng tạo:
+                        {% if creative %}
+                        {{ creative }}
+                        {% else %}
+                        {{"  ---  "}}
+                        {% endif %}
+                    </p>
+                </li>
+                <li>
+                    <p>Đánh giá tính khả thi:
+                        {% if possibility %}
+                        {{ possibility }}
+                        {% else %}
+                        {{"  ---  "}}
+                        {% endif %}
+                    </p>
+                </li>
+                <li>
+                    <p>Ghi chú:
+                        {% if content %}
+                        {{ content }}
+                        {% else %}
+                        {{"  ---  "}}
+                        {% endif %}
+                    </p>
+                </li>
+                <li>
+                    <p>Điểm đánh giá:</p>
+                    {% for i in rateLoop %}
+                        <img src="cid:star" alt="">
+                    {% endfor %}
+                    {% for i in notRateLoop %}
+                        <img src="cid:not_star" alt="">
+                    {% endfor %}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <a href="{{deeplink}}">Xem chi tiết bài viết </a>
+    </div>
+    <div>
+        <p>My
+            PT chúc Anh/Chị nhiều sức khỏe và thành công! 
+        </p>
+    </div>
+    <div>
+        <p>Xin cảm ơn! </p>
+    </div>
+    <p><br></p>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+TOOLS_DB = {
+    "id":"id",
+    "scmId":"scm_id",
+    "itemCode":"item_code",
+    "itemName":"item_name",
+    "sizeName":"size_name",
+    "assetCode":"asset_code",
+    "stockName":"stock_name",
+    "zoneName":"zone_name",
+    "email":"email",
+    "serial":"serial",
+    "quantityNow":"quantity_now",
+    "quantityHold":"quantity_hold",
+    "startDate":"start_date",
+    "expireDate":"expire_date",
+}
+
+TOOLS_DEFAULT_VALUE = {
+    "id":"",
+    "scmId":"",
+    "itemCode":"",
+    "itemName":"",
+    "sizeName":"",
+    "assetCode":"",
+    "stockName":"",
+    "zoneName":"",
+    "email":"",
+    "serial":"",
+    "quantityNow":0,
+    "quantityHold":0,
+    "startDate":"",
+    "expireDate":"",
+}

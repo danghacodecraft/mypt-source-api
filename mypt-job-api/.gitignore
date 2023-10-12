@@ -1,0 +1,15 @@
+.gitlab-ci.yml
+./env
+__pycache__
+/autorun.bat
+/Dockerfile
+/note
+/shell.bat
+migrations
+/MyPT-env
+.idea
+*.bat
+/.vscode
+**/__pycache__
+**/migrations
+/venv

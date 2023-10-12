@@ -1,0 +1,9 @@
+.gitlab-ci.yml
+/env
+.env.local
+__pycache__
+/autorun.bat
+/Dockerfile
+/note
+/venv/
+.idea/
