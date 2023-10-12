@@ -24,8 +24,8 @@ def hr_auth():
     if cache.has_key('hrlogin'):
         return cache.get('hrlogin')
     payload = {
-        "username": "pnc@hr.fpt.vn",
-        "password": "!@#Pnc123"
+        "username": "",
+        "password": ""
     }
 
     headers = {

@@ -88,8 +88,8 @@ def call_api(**kwargs):
 
 def hr_auth():
     payload = {
-        "UserNameOrEmail": "pnc@hr.fpt.vn",
-        "password": "!@#Pnc123"
+        "UserNameOrEmail": "",
+        "password": ""
     }
 
     headers = {
