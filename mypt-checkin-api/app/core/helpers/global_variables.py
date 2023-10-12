@@ -79,8 +79,8 @@ SERVICE_CONFIG = {
         "auth": "TokenAuth/Authenticate",
         "method": "POST",
         "param": {
-            "UserNameOrEmail": "pnc@hr.fpt.vn",
-            "password": "!@#Pnc123",
+            "UserNameOrEmail": "",
+            "password": "",
             "rememberClient": "True"
         },
         "GetEmployeeInfo" : "services/app/pnc/GetEmployeeInfo",
